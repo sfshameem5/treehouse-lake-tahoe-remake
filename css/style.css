@@ -1,0 +1,205 @@
+/* Universal Styles */
+
+* {
+  font-family: sans-serif, Arial, Verdana;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #878787;
+}
+
+/* Styles for Header */
+
+header {
+  text-align: center;
+  color: white;
+  height: 850px;
+  padding: 200px 0;
+  /* As a fallback */
+  background-image: url("../img/mountains.jpg");
+  /* For Modern Browsers */
+  background: linear-gradient(orange 30%, transparent 60%, white 90%),
+    url("../img/mountains.jpg");
+  background-size: cover;
+}
+
+.arrow {
+  margin-top: 100px;
+  width: 100px;
+}
+
+.title {
+  display: inline-block;
+  font-size: 1.625rem;
+  border-bottom: 1px solid;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 5.625rem;
+}
+
+/* Styles for the Main Element */
+
+.primary-content {
+  text-align: center;
+}
+.introduction {
+  padding-top: 30px;
+  border-top: 1px solid lightgray;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: 1;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 30px;
+}
+
+.finder,
+.see {
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 2px solid;
+  color: orange;
+}
+
+.secondary-content {
+  border-bottom: 1px solid lightgrey;
+  width: 90%;
+  margin: 0 5%;
+}
+.wildlife {
+  color: white;
+  text-align: center;
+  border-top: 10px solid orange;
+  width: 60%;
+  margin: 80px auto;
+  padding-top: 200px;
+  padding-bottom: 250px;
+  height: 350px;
+  background: url("../img/bear.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.wildlife h2 {
+  font-size: 2em;
+}
+
+.wildlife p {
+  font-size: 1.2em;
+  max-width: 500px;
+  margin: 3% auto;
+}
+
+a:link,
+a:visited {
+  color: orange;
+}
+
+.see {
+  margin: 0 auto 100px;
+  width: 140px;
+  display: block;
+  text-align: center;
+}
+
+.left img,
+.right img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.left-content,
+.right-content {
+  padding: 30px 20px;
+}
+
+.ordered-list,
+.unordered-list {
+  padding: 20px;
+}
+
+.left {
+  width: 400px;
+  float: left;
+  margin-left: 10%;
+}
+
+.right {
+  width: 400px;
+  float: right;
+  margin-right: 10%;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 5px solid orange;
+}
+
+footer a[href="#top"] {
+  display: inline-block;
+  padding: 10px 3px 0;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .wildlife {
+    width: 96%;
+    margin: 7% 2%;
+    font-size: 0.8em;
+  }
+  .right,
+  .left {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .title {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  header {
+    height: 500px;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wildlife {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header .title {
+    font-size: 1rem;
+  }
+
+  .arrow {
+    margin-top: 30px;
+    width: 30px;
+  }
+
+  header {
+    height: 400px;
+  }
+}
